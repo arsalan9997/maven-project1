@@ -40,7 +40,9 @@ mvn test
 
 mvn package
 
-## install tomcat
+mvn install
+
+## Install tomcat
 
 sudo apt install tomcat10 tomcat10-admin -y
 
@@ -63,11 +65,7 @@ sudo cp target/java-maven-demo.war /var/lib/tomcat10/webapps/
 
 Copy WAR file to Tomcat webapps directory:
 
-cp target/java-maven-demo.war /opt/tomcat/webapps/
-
-Start Tomcat:
-
-/opt/tomcat/bin/startup.sh
+ls -l /var/lib/tomcat10/webapps/java-maven-demo/
 
 ## Application URL
 
