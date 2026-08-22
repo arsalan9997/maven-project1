@@ -40,11 +40,18 @@ mvn test
 
 mvn package
 
-## install tomcat 
+## install tomcat
+
 sudo apt install tomcat10 tomcat10-admin -y
-sudo systemctl start tomcat10
-sudo systemctl enable tomcat10
+
+sudo systemctl start tomcat10 
+
+
+sudo systemctl enable tomcat10 
+
+
 sudo systemctl status tomcat10
+
 
 ## WAR File
 
