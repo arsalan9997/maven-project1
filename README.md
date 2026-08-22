@@ -43,8 +43,13 @@ mvn package
 ## WAR File
 
 After successful build:
+install tomcat 
+sudo apt install tomcat10 tomcat10-admin -y
+sudo systemctl start tomcat10
+sudo systemctl enable tomcat10
+sudo systemctl status tomcat10
 
-target/java-maven-demo.war
+sudo cp target/java-maven-demo.war /var/lib/tomcat10/webapps/
 
 ## Deploy to Tomcat
 
