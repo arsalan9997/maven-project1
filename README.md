@@ -1,10 +1,10 @@
 # Java Maven Demo
 
-Simple Java 21 Servlet application built using Maven and deployed on Apache Tomcat.
+Simple Java 25 Servlet application built using Maven and deployed on Apache Tomcat.
 
 ## Technologies
 
-- Java 21
+- Java 25
 - Maven
 - Jakarta Servlet
 - Apache Tomcat
