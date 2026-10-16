@@ -37,11 +37,17 @@ pipeline {
                                  allowEmptyArchive: false
             }
         }
+
+        stage('Deploy to Tomcat 10') {
+            steps {
+                sh 'sudo cp target/*.war /opt/tomcat/webapps/'
+            }
+        }
     }
 
     post {
         success {
-            echo 'Maven build successful!'
+            echo 'Build and Tomcat deployment successful!'
         }
 
         failure {
