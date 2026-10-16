@@ -40,7 +40,7 @@ pipeline {
 
         stage('Deploy to Tomcat 10') {
             steps {
-                sh 'sudo cp target/*.war /opt/tomcat/webapps/'
+                sh 'sudo cp target/*.war /var/lib/tomcat10/webapps/'
             }
         }
     }
